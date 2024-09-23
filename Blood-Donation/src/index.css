@@ -1,0 +1,227 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    
+    position: relative; 
+}
+
+ .btn::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    background: gray;
+ }
+
+ /* for hover from center */
+.btn-center::after {
+    transform: scale(0, 1);
+    transition: transform 0.5s ease;
+}
+
+.btn-center:hover::after {
+    transform: scale(1,1);
+}
+
+ /* for hover from Left */
+ .btn-left::after {
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.5s ease;
+}
+
+.btn-center:hover::after {
+    transform: scale(1,1);
+}
+
+
+.hero-pattern{
+    height: 100%;
+    width:60%;
+}
+
+.edit-btn {
+    background-color: black;
+    color: white;
+    padding: 12px 30px 18px 30px;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21.09px;
+}
+
+.name-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42.19px;
+}
+
+
+.nav-text {
+    font-size: 1.5rem; 
+    line-height: 2.25rem; 
+}
+
+.mission-text {
+    font-size: 2.25rem; 
+    line-height: 2.625rem;
+}
+
+/* 48px 56px  */
+.col-text {
+    font-size: 3rem;    
+    line-height: 3.5rem; 
+}
+/* 30px 35.16px */
+.button-text {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.210rem; /* 35.16px */
+}
+
+.cir-text {
+    font-size: 4rem; /* 64px */
+    line-height: 5.464rem; /* 87.42px */
+  }
+
+  .step-text {
+    font-size: 1.125rem;  /* 18px */
+    line-height: 1.5rem;  /* 24px */
+  }
+  
+  .don-text {
+    font-size: 1.5rem;  /* 24px */
+    line-height: 1.75rem;  /* 28px */
+}
+
+.succss-text {
+    font-size: 1.5rem;  /* 24px */
+    line-height: 1.85rem;  /* 28px */
+}
+ .view-text{
+    font-size: 18px;
+    line-height: 21px;
+ }
+
+.rep-text {
+    font-size: 1.375rem;  /* 22px */
+    line-height: 1.75rem;  /* 28px */
+}
+.news-text{
+    font-size: 1.375rem;
+    line-height: 1.789rem;
+}
+
+.recep-text {
+    font-size: 1.875rem;
+    line-height: 2.19875rem;
+}
+
+
+.footer-text{
+    font-size: 1.0625rem;
+    line-height: 1.382rem;
+}
+
+.reg-text {
+    font-size: 2.25rem; /* 36px / 16px = 2.25rem */
+    line-height: 2.625rem; /* 42px / 16px = 2.625rem */
+}
+
+.small-text {
+        font-size: 1.25rem;
+        line-height: 2.625rem;
+    
+}
+
+.history-text {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.btn-text{
+    font-size: 1.5625rem;
+    line-height: 1.83125rem;
+}
+
+.history-text {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.3125rem; /* 21px */
+}
+
+
+.react-calendar {
+    width: 100% !important;
+    border: none !important;
+}
+
+.custom-calendar .react-calendar__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  
+  .custom-calendar .react-calendar__navigation .month-year-select {
+    font-weight: bold;
+  }
+  
+  .custom-calendar .react-calendar__navigation button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .custom-calendar .react-calendar__navigation button:focus {
+    outline: none;
+  }
+  
+  .custom-calendar .react-calendar__navigation .react-calendar__navigation__label {
+    order: 1;
+  }
+  
+  .custom-calendar .react-calendar__navigation__arrow {
+    order: 2;
+  }
+  
+
+
+
+
+  
+/* Dropdown menu */
+.dropdown-menu {
+    position: absolute;
+    /* background-color: red;  */
+    top: 130%;
+    left: -10%;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .relative:hover .dropdown-menu,
+  .relative:hover .relative .dropdown-menu {
+    opacity: 10;
+    visibility: visible;
+  }
+
+  .dropdown-menu li {
+    margin-bottom: 10px;
+  }
+  
+
+.otp-text {
+    font-size: 36px;
+    line-height: 50px;
+}
+
+.lorem-text {
+    font-size: 14px;
+    line-height: 16px;
+}
